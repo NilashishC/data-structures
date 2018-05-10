@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 
 """
-
-
     An implementation of the Binary Search Tree ADT in Python 3   
     ============================================================
 
     Copyright (c) 2018 Nilashish Chakraborty
-
 
 """
 
