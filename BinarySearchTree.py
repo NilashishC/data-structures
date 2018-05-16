@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    An implementation of the Binary Search Tree ADT in Python 3   
+    An implementation of the Binary Search Tree ADT in Python 3
     ============================================================
 
     Copyright (c) 2018 Nilashish Chakraborty
@@ -16,7 +16,7 @@ class BinarySearchTree:
 
     def __init__(self):
         """
-            Initialize the Binary Search Tree with a NULL root
+            Initialize the Binary Search Tree with a NULL root.
         """
         self.__root = None
 
@@ -24,7 +24,7 @@ class BinarySearchTree:
         """
             Insert a (key, value) in the correct position.
             If the key in the passed (key, value) already exists, an Exception
-            is thrown
+            is thrown.
         """
 
         if self.__root and self.search(key):
@@ -40,7 +40,7 @@ class BinarySearchTree:
     def __insert(self, currentNode, key, value):
         """
             Private recursive method to traverse the tree and insert the
-            (key, value) in the appropriate position
+            (key, value) in the appropriate position.
         """
 
         if key < currentNode.key:
@@ -92,7 +92,7 @@ class BinarySearchTree:
 
     def height(self):
         """
-            Returns the height of the tree starting from 0
+            Returns the height of the tree starting from 0.
         """
 
         if self.__root:
@@ -103,7 +103,7 @@ class BinarySearchTree:
     def __height(self, currentNode, currentHeight):
         """
             This method recursively traverses the tree to find the
-            height of the Tree
+            height of the Tree.
         """
         if currentNode is None:
             return currentHeight
@@ -116,7 +116,7 @@ class BinarySearchTree:
     def search(self, key):
         """
             This method searches the Binary Search Tree and returns the
-            True if key is present, else returns False
+            True if key is present, else returns False.
         """
         if self.__root:
             return self.__search(self.__root, key)
@@ -139,7 +139,7 @@ class BinarySearchTree:
     def find(self, key):
         """
             This method searches the Binary Search Tree and returns the
-            Node if a Node with that key is present, else returns None
+            Node if a Node with that key is present, else returns None.
         """
         if self.__root:
             return self.__find(self.__root, key)
@@ -244,11 +244,11 @@ class BinarySearchTree:
     def validateBST(tree):
         """
             If the passed item is an instance of Binary Search Tree,
-            then the root of the tree is sent for validation
+            then the root of the tree is sent for validation.
 
             If the passed item is an instance of BSTNode, then the item itself
-            is sent for validation since it is must be the root of the
-            desired tree
+            is sent for validation since it must be the root of the
+            desired tree.
 
         """
         if isinstance(tree, BinarySearchTree):
